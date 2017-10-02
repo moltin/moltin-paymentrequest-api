@@ -65,12 +65,12 @@ export default {
   methods: {
     async fetchMoltinData() {
       this.products = await Moltin.Products.All();
-      await this.fetchCart();
+      return this.fetchCart();
     },
 
-    fetchCart() {
-      this.cart = Moltin.Cart.Get();
-      this.cartItems = Moltin.Cart.Items();
+    async fetchCart() {
+      this.cart = await Moltin.Cart.Get();
+      this.cartItems = await Moltin.Cart.Items();
     },
 
     async addToCart(product) {
