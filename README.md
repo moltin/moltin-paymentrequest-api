@@ -14,6 +14,8 @@ module.exports = {
 }
 ```
 
+👉 Try out the [demo](https://moltin-paymentrequest-api.now.sh/#/).
+
 **Note**: This demo will only work in [browsers with support](http://caniuse.com/#feat=payment-request) (Chrome 61+, Edge 15+) for the Payment Request API.
 
 ## Build Setup
